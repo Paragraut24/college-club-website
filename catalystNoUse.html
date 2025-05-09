@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Catalyst Club</title>
+    <link rel="icon" type="image/x-icon" href="/catalyst.png">
+    <link rel="stylesheet" href="catalyst.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+
+<style>
+    body {
+    background: linear-gradient(to right, #000647, #293d47);
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+}
+
+#vitlogo {
+    height: 170px;
+    text-align: left;
+}
+
+nav ul {
+    padding: 0%;
+    list-style-type: none;
+    transition: all 0.3s ease;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 25px;
+}
+
+nav ul li a {
+    color: #f4f3eb;
+    text-decoration: double;
+    transition: transform 0.2s;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.fade-in {
+    animation: fadeIn 2s ease-in-out;
+}
+
+nav ul li a:hover {
+    transform: scale(1.05);
+    color: #8bbaff;
+}
+
+nav ul:hover {
+    transform: scale(1.05);
+    color: #8bbaff;
+}
+
+button:hover {
+    background-color: #007BFF;
+    color: #fff;
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    section {
+        margin: 10px 0;
+    }
+}
+
+header h1 {
+    margin: 0;
+    font-size: xx-large;
+}
+
+main {
+    padding: 25px;
+}
+
+section {
+    margin-bottom: 50px;
+}
+
+#fyClubs {
+    background-image: url(https://img.freepik.com/free-photo/miniature-people-student-teacher-with-stationery-tools-back-school-concept_29654-882.jpg);
+    background-size: cover;
+    border-radius: 20px;
+    padding: 10px;
+    margin: 5%;
+}
+
+#techClubs {
+    background-image: url(https://static.vecteezy.com/system/resources/previews/000/664/710/original/vector-abstract-technology-background-hi-tech-communication-digital-background.jpg);
+    border-radius: 20px;
+    padding: 10px;
+    margin: 5%;
+}
+
+#Cultural-Clubs {
+    background-image: url(https://wallpaperaccess.com/full/1723083.jpg);
+    border-radius: 20px;
+    padding: 10px;
+    margin: 5%;
+}
+
+.club_ {
+    background-color: rgba(189, 204, 224, 0.726);
+    box-shadow: 0 3px 4px rgba(0,0,0,0.2);
+    padding: 10px;
+    margin-left: 120px;
+    margin-right: 100px;
+    border-radius: 25px;
+    font-family: "Open Sans", sans-serif;
+    text-align: center;
+    font-size: large;
+    transition: transform 0.2s;
+}
+
+.club_:hover {
+    transform: scale(1.05);
+}
+
+.club_tech {
+    background-color: rgba(59, 80, 162, 0.751);
+    color: white;
+    box-shadow: 0 3px 4px rgba(0,0,0,0.2);
+    padding: 15px;
+    margin-left: 120px;
+    margin-right: 100px;
+    border-radius: 25px;
+    font-family: "Open Sans", sans-serif;
+    text-align: center;
+    font-size: large;
+    transition: transform 0.2s;
+}
+
+.club_tech:hover {
+    transform: scale(1.05);
+}
+
+.club_cul {
+    background-color: rgba(255, 140, 209, 0.751);
+    color: rgb(0, 0, 0);
+    box-shadow: 0 3px 4px rgba(0,0,0,0.2);
+    padding: 15px;
+    margin-left: 120px;
+    margin-right: 100px;
+    border-radius: 25px;
+    font-family: "Open Sans", sans-serif;
+    text-align: center;
+    font-size: large;
+    transition: transform 0.2s;
+}
+
+.club_cul:hover {
+    transform: scale(1.05);
+}
+
+.formLink {
+    display: block;
+    transition: transform 2s;
+}
+
+.formLink:hover {
+    transform: scale(1.02);
+}
+
+h3 {
+    box-shadow: 0 3px 4px rgba(0,0,0,0.2);
+    border-radius: 20px;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgb(255, 255, 255);
+    margin-top: 0px;
+    font-family: "Bebas Neue", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: xx-large;
+}
+
+h2 {
+    box-shadow: 0 3px 4px rgba(0,0,0,0.2);
+    border-radius: 20px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #333333ee;
+    color: #ffffff;
+    text-align: center;
+    font-size: xx-large;
+    padding-top: 10px;
+    height: 50px;
+}
+
+#clb-logo {
+    box-shadow: 0 4 4 rgba(0,0,0,0.2);
+    border-radius: 100px;
+    height: 180px;
+    float: left;
+    margin-top: 10px;
+    transition: transform 0.2s;
+    box-shadow: 0 5px 4px rgba(0, 0, 0, 0.429);
+}
+
+#clb-logo:hover {
+    transform: scale(1.05);
+}
+
+#more-clubs {
+    color: #c3c3c3;
+    text-decoration: underline;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+#more-about-clubs {
+    color: #ffffff;
+    text-decoration: underline;
+    text-transform: uppercase;
+    text-align: center;
+    font-style: normal;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+h1 {
+    text-align: center;
+}
+
+#h2 {
+    text-align: left;
+}
+
+#regestration {
+    background: linear-gradient(to right, #baff90, #1d94b5);
+    box-shadow: 0 3px 4px rgba(0,0,0,0.2);
+    padding: 15px;
+    border-radius: 15px;
+    font-family: "Open Sans", sans-serif;
+    text-align: center;
+    height: 180px;
+    margin: 15px;
+}
+
+#clb-info {
+    display: table;
+    text-align: left;
+    padding: 30px;
+}
+
+.pic1, .pic2 {
+    height: 150px;
+    margin-top: -50px;
+}
+</style>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark border-bottom border-body my-1">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"> <b>CLUBS OF VIT PUNE</b> </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="/index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">The Catalyst Club</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#clubMembers">Members</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Follow us
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="https://www.instagram.com/thecatalyst_vit/">Our Instagram</a></li>
+                            <li><a class="dropdown-item" href="https://www.facebook.com">Facebook</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="https://www.linkedin.com/company/the-catalyst-vit-pune">Our Linkedin</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div id="page" class="container">
+        <header class="banner">
+            <section>
+                <ul id="header" class="list-inline">
+                    <li class="list-inline-item"><img id="vitp-logo" src="https://img.collegepravesh.com/2017/05/VIT-Pune-Logo.png" alt="vitp-logo" height="150" width="150"></li>
+                    <li class="list-inline-item">
+                        <h1 id="vit" class="display-4">Vishwakarma Institutes</h1>
+                    </li>
+                </ul>
+            </section>
+        </header>
+
+        <video autoplay muted loop id="myVideo" class="w-100" style="position: fixed; top: 0; left: 0; height: 100%; object-fit: cover; z-index: -1; opacity: 0.3;">
+            <source src="https://videos.pexels.com/video-files/7101913/7101913-uhd_2560_1440_25fps.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+
+        <section id="clubDetails" class="my-5">
+            <p class="text-white">
+                <b>The Catalyst Club</b> at <i>Vishwakarma Institute of Technology (VIT), Pune,</i> is dedicated to
+                empowering <u>first-year students</u> by providing a supportive community and diverse opportunities for
+                personal and academic development. Here are some key details about the club:
+                <br><br>
+                <b>Mission:</b> <br>
+                To help first-year students thrive academically, socially, and personally by fostering a vibrant
+                environment for exploring interests, developing essential skills, and building meaningful
+                connections. <br>
+                <b>Academic Support:</b> <br>
+                Offers tailored programs such as study groups, tutoring sessions, and workshops on time management and
+                study skills to enhance the learning experience.
+                <br>
+                <b>Skill Development:</b> <br>
+                Provides workshops and seminars on communication skills, leadership development, financial literacy,
+                and career readiness to equip students with essential life skills. <br>
+                <b>Personal Growth:</b> <br>
+                Focuses on holistic development through activities, retreats, and community service initiatives that
+                promote self-discovery, personal reflection, and character building. <br>
+                <b>Peer Mentorship:</b> <br>
+                Pairs first-year students with experienced upperclassmen who offer guidance, advice, and encouragement.
+                <br>
+                <b>Networking and Community:</b> <br>
+                Organizes networking events, social gatherings, and campus-wide activities to connect students with
+                peers, faculty members, and guest speakers. <br><br>
+                The Catalyst Club is <strong>more than just a club;</strong> it’s a community that supports students in
+                their transition from high school to college, ensuring they have the resources and support needed to
+                succeed.
+                <br>
+            </p>
+        </section>
+
+        <section id="clubMembers" class="my-5">
+            <h3 class="text-center display-4 text-shadow" style="font-family: 'Bebas Neue', serif; color: white; letter-spacing: 3px;">The Catalyst</h3>
+            <br>
+            <div class="card-deck">
+                <div class="card">
+                    <img src="/Screenshot 2025-01-30 085825.png" class="card-img-top" alt="president" style="border-radius:40px;">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Club President</h5>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="techchief.png" class="card-img-top" alt="Technical Chief" style="border-radius:40px;">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Technical Chief</h5>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="secretary.png" class="card-img-top" alt="Chief Secretary" style="border-radius:40px;">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Chief Secretary</h5>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="updatedMembersSection" class="my-5" style="display: none;">
+            <h3 id="updatedMembersTitle" class="text-center">Added/Updated Members:</h3>
+            <div id="newMember" class="text-left" style="font-size: large;"></div>
+            <p id="verificationNote" style="font-size: small;">(The information will be verified and the page will be updated soon...)</p>
+        </section>
+
+        <section id="update2" class="text-center my-3">
+            <a href="/successStoryForm.html" class="btn btn-primary btn-lg btn-block mx-auto" style="font-size: larger; font-family: 'Open Sans', sans-serif; max-width: 80%;">
+                Share Your Success Story with us!
+            </a>
+        </section>
+        <section id="update" class="text-center my-3">
+            <a href="/catalystform.html" class="btn btn-secondary btn-lg btn-block mx-auto" style="font-size: larger; font-family: 'Open Sans', sans-serif; max-width: 80%;">
+                Update Club Committee Members
+            </a>
+        </section>
+    </div>
+
+    <footer class="bg-dark text-white text-center py-3">
+        <a href="https://www.vit.edu/" target="_blank" class="text-white">Visit The Official VIT Pune WebPage</a>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.3/js/bootstrap.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', (event) => {
+            const name = localStorage.getItem('name');
+            const position = localStorage.getItem('position');
+            if (name && position) {
+                document.getElementById('updatedMembersSection').style.display = 'block';
+                document.getElementById('newMember').innerHTML = `<p><strong>${position}:</strong> ${name}</p>`;
+            }
+        });
+    </script>
+</body>
+</html>

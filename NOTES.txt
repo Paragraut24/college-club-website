@@ -1,0 +1,24 @@
+Satisfy User
+Make website attractive 
+Make them stick to your webpage
+Maintain consistency
+Make it Addictive
+Be the User and find if it satisfies your demand
+
+
+
+
+PSAP
+
+**
+title/problem statement
+flowchart/code
+result/output
+conclusion
+**
+
+1)
+2)
+3)operator and /or  (salary wala or uske sath wala koi)
+4) loop for/while/dowhile
+5) Array 1d and 2d 

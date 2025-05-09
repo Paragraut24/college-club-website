@@ -1,0 +1,247 @@
+body {
+    background: linear-gradient(to right, #000647, #293d47);
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+    }
+
+header{
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+
+}
+#vitlogo{
+    height: 170px;
+    text-align: left;
+}
+nav ul{
+    padding: 0%;
+    list-style-type: none;
+    transition: all 0.3s ease;
+}
+nav ul li{
+    display: inline;
+    margin-right: 25px;
+    
+}
+nav ul li a{
+    color: #f4f3eb;
+    text-decoration: double;
+    transition: transform 0.2s;
+}
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.fade-in {
+    animation: fadeIn 2s ease-in-out;
+}
+
+nav ul li a:hover {
+    transform: scale(1.05);
+    color: #8bbaff;
+}
+nav ul:hover {
+    transform: scale(1.05);
+    color: #8bbaff;
+}
+button:hover {
+    background-color: #007BFF;
+    color: #fff;
+}
+@media (max-width: 768px) {
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    section {
+        margin: 10px 0;
+    }
+}
+
+header h1{
+    margin: 0;
+    font-size: xx-large;
+
+}
+main{
+    padding: 25px;
+}
+section{
+    margin-bottom: 50px;
+}
+#fyClubs{
+    background-image: url(https://img.freepik.com/free-photo/miniature-people-student-teacher-with-stationery-tools-back-school-concept_29654-882.jpg);
+    background-size: cover;
+    border-radius: 20px;
+    padding: 10px;
+    margin: 5%;
+}
+#techClubs{
+    background-image: url(https://static.vecteezy.com/system/resources/previews/000/664/710/original/vector-abstract-technology-background-hi-tech-communication-digital-background.jpg);
+    border-radius: 20px;
+    padding: 10px;
+    margin: 5%;
+}
+
+#Cultural-Clubs{
+    background-image: url(https://wallpaperaccess.com/full/1723083.jpg);
+    border-radius: 20px;
+    padding: 10px;
+    margin: 5%;
+}
+.club_{
+    background-color: rgba(189, 204, 224, 0.726);
+    box-shadow: 0 3px 4px rgba(0,0,0,0.2) ;
+    padding: 10px;
+    margin-left: 120px;
+    margin-right: 100px;
+    border-radius: 25px;
+    font-family: "Open Sans", sans-serif;
+    text-align: center;
+    font-size: large;
+    transition: transform 0.2s;
+}
+.club_:hover {
+    transform: scale(1.05);
+    }
+
+.club_tech{
+    background-color: rgba(59, 80, 162, 0.751);
+    color: white;
+    box-shadow: 0 3px 4px rgba(0,0,0,0.2) ;
+    padding: 15px;
+    margin-left: 120px;
+    margin-right: 100px;
+    border-radius: 25px;
+    font-family: "Open Sans", sans-serif;
+    text-align: center;
+    font-size: large;
+    transition: transform 0.2s;
+}
+.club_tech:hover {
+    transform: scale(1.05);
+}
+.club_cul{
+    background-color: rgba(255, 140, 209, 0.751);
+    color: rgb(0, 0, 0);
+    box-shadow: 0 3px 4px rgba(0,0,0,0.2) ;
+    padding: 15px;
+    margin-left: 120px;
+    margin-right: 100px;
+    border-radius: 25px;
+    font-family: "Open Sans", sans-serif;
+    text-align: center;
+    font-size: large;
+    transition: transform 0.2s;
+}
+.club_cul:hover {
+    transform: scale(1.05);
+}
+
+
+.formLink{
+    display: block;
+    transition: tranform 2s;
+}
+.formLink:hover{
+    transform: scale(1.02);
+}
+h3 {
+    box-shadow: 0 3px 4px rgba(0,0,0,0.2) ;
+    border-radius: 20px;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgb(255, 255, 255);
+    margin-top: 0px;
+    font-family: "Bebas Neue", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: xx-large;
+}
+h2 {
+    box-shadow: 0 3px 4px rgba(0,0,0,0.2) ;
+    border-radius: 20px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #333333ee;
+    color: #ffffff;
+    text-align: center;
+    font-size: xx-large;
+    padding-top: 10px;
+    height: 50px;
+}
+#clb-logo{
+    box-shadow: 0 4 4 rgba(0,0,0,0.2);
+    border-radius: 100px;
+    height: 180px;
+    float: left;
+    margin-top: 10px;
+    transition: transform 0.2s;
+    box-shadow: 0 5px 4px rgba(0, 0, 0, 0.429) ;
+}
+#clb-logo:hover{
+    transform: scale(1.05);
+}
+#more-clubs{
+    color: #c3c3c3;
+    text-decoration: under;
+    text-transform: uppercase;
+    text-align: center;
+
+}
+#more-about-clubs{
+    color: #ffffff;
+    text-decoration: under;
+    text-transform: uppercase;
+    text-align: center;
+    font-style: normal;
+
+}
+footer a{
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+
+}
+h1{
+    text-align: center;
+}
+#h2{
+    text-align: left;
+}
+#regestration{
+    background: linear-gradient(to right, #baff90, #1d94b5);
+    box-shadow: 0 3px 4px rgba(0,0,0,0.2) ;
+    padding: 15px;
+    border-radius: 15px;
+    font-family: "Open Sans", sans-serif;
+    text-align: center;
+    height: 180px;
+    margin: 15px;
+}
+#clb-info{
+    display: table;
+    text-align: left;
+    padding: 30px;
+}
+.pic1,.pic2{
+    height: 150px;
+    margin-top: -50px;
+    
+}

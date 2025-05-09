@@ -1,0 +1,82 @@
+body {
+    background: linear-gradient(to right, #6742bc, #396c96);
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.fade-in {
+    animation: fadeIn 2s ease-in-out;
+}
+h1{
+    color: white; 
+       background-color: #333333;
+    text-align: center;
+    border-radius: 5px;
+    font-family: "Bebas Neue", sans-serif;
+    word-spacing: 10px;
+    letter-spacing: 20px;
+    font-size: xxx-large;
+}
+
+.club_{
+    background: linear-gradient(to right, #925fd4, #c5c6ff);
+    border-radius: 20px;
+    padding: 20px;
+    margin-left: 80px;
+    margin-right: 80px;
+    font-family: "Open Sans", sans-serif;
+    font-size: large;
+    transition: transform 0.2s;
+    padding-bottom: 150px;
+    text-align: justify;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.2) ;
+}
+.club_ p{
+    padding-left: 200px;
+}
+#more-clubs{
+    padding-left: 20px;
+}
+.club_:hover{
+    transform: scale(1.05);
+}
+#clb-logo{
+    border-radius: 100px;
+    height: 180px;
+    transition: transform 0.2s;
+    float: left;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.2) ;
+
+}
+#clb-logo:hover{
+    transform: scale(1.05);
+}
+h2{
+    background-color: #333333;;
+    padding: 10px;
+    padding-left: 20px;
+    border-radius: 50px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.2) ;
+    font-family: "Bebas Neue", sans-serif;
+    letter-spacing: 5px;
+}
+
+footer{
+    background-color: #1d435767;
+    text-align: center;
+    width: 100%;
+    color: rgb(194, 194, 194);
+    font-weight: 700;
+    font-size: large;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}

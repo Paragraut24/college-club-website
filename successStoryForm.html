@@ -1,0 +1,65 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Share Your Success Story</title>
+    <link rel="stylesheet" href="form.css">
+    <link rel="icon" type="image/x-icon" href="https://cdn-icons-png.flaticon.com/512/1484/1484799.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+</head>
+<style>
+    body {
+        background: linear-gradient(to right, #4750b0, #4900a8);
+        font-family: 'Open Sans', sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+</style>
+
+<body>
+    <section>
+        <div id="intro">
+            <h2>Share Your Success Story</h2>
+        </div>
+        <div id="form">
+            <p style="text-align: left; font-weight: 100; font-size: x-small;">Fields marked with * are mandatory to
+                fill</p>
+            <form onsubmit="return sendSuccessStory()" action="successStorySubmit.html">
+                <label for="name">Full Name *:</label>
+                <br>
+                <input type="text" id="name" placeholder=" &ensp;Name" style="height: 38px; width: 60%;" required>
+                <br><br>
+                <label for="email">E-mail *:</label>
+                <br>
+                <input type="email" id="email" placeholder=" &ensp; mail@vit.edu" style="height: 38px; width: 60%;"
+                    required>
+                <br><br>
+                <label for="story">Your Success Story *:</label>
+                <br>
+                <textarea id="story" placeholder=" &ensp;Share your success story here..."
+                    style="height: 100px; width: 65%; border-radius: 10px;" required></textarea>
+                <br><br>
+                <button type="submit"
+                    style="background-color: rgb(221, 186, 255); height: 40px; width: 80px; border-radius:20px ;">Submit</button>
+            </form>
+        </div>
+    </section>
+    <script>
+        function sendSuccessStory() {
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const story = document.getElementById('story').value;
+
+            console.log(`Name: ${name}, Email: ${email}, Story: ${story}`);
+
+            alert('Your success story has been sent to the club!');
+            return true;
+        }
+    </script>
+</body>
+
+</html>

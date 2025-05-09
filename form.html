@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="icon" type="image/x-icon" href="https://cdn-icons-png.flaticon.com/512/1484/1484799.png">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Parkinsans:wght@300..800&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Exo+2:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Parkinsans:wght@300..800&display=swap" rel="stylesheet">
+    <title>Regestration Form</title>
+    <link rel="stylesheet" href="/form.css">
+    <script src="/test.js">
+
+var video = document.getElementById("myVideo");
+
+</script>
+</head>
+
+<header id="header">
+        <img id="vitlogo" src="vitlogo.PNG" alt="vit-logo"> 
+        <h1>Regestration Form</h1>
+</header>
+<video autoplay muted loop id="myVideo" style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: -1;">
+    <source src="https://videos.pexels.com/video-files/3163534/3163534-uhd_2560_1440_30fps.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+  
+<body>
+    <section >
+    <div  id="intro">
+        <h2>
+        Unleash Your Passion By Joining Clubs in Your College
+        </h2>
+        <p>
+            "This registration form is designed to provide students with a seamless and efficient way to join their preferred college clubs. By filling out this form, <br> students can easily express their interest in a particular club and provide necessary details, such as their contact information and academic <br>background. Once registered, students will receive updates on club meetings, <br>events, and activities, allowing them to stay informed and engaged.  This form will also help club <br>administrators to manage membership, communicate with members, and plan events that cater to the interests of their members. By streamlining the  registration process, we aim to encourage more students to join college clubs,<br> explore their passions, and develop valuable skills and connections."
+        </p>
+    </div>
+
+    <div id="form">
+        <p style="text-align: left; font-weight: 100; font-size: x-small;" >sectios marked with * are mandatory to fill</p>
+         <form onsubmit=" return data()" action="submitted.html" >
+            <label for="name">Full Name *  :</label>
+            <br>
+            <input type="text" id="name" placeholder=" &ensp;Name" required>
+            <br> <br>
+            <label for="prn">PRN *:</label> <br>
+            <input type="text" id="prn" placeholder=" &ensp;PRN" pattern="[0-9]{8}" > <br> <br>
+            <label for="email">E-mail *:</label> <br>
+            <input type="email" id="email" placeholder=" &ensp; mail@vit.edu" required> <br> <br>
+            <label for="mob">Mobile Number *:</label> <br>
+            <input type="phone" id="mob" placeholder=" &ensp; Whatsapp No." pattern="[0-9]{10}" required> <br> <br>
+            <br>
+            <div>
+                <label>Campus *:</label>
+                <br> <br>
+                <input class="campus" type="radio" id="bibwewadi" name="campus" value="Bibwewadi"><label for="bibwewadi">Bibwewadi</label> <br> <br>
+                <input class="campus" type="radio" id="kondhwa" name="campus" value="Kondhwa"><label for="kondhwa">Kondhwa</label>
+
+            </div>
+            <br> <br>
+            <div>
+                <label for="club">Select Club * :</label> <br> <br>
+            <select name="club" id="club" required >
+                <option disabled selected value>--Select--</option>
+                <option value="catalyst">Catalyst Club</option>
+                <option value="saarthi">Saarthi Club</option>
+                <option value="GedIT">GedIT Coding Club</option>
+                <option value="Quark">Team Quark</option>
+                <option value="Zephyr">Team Zephyr</option>
+                <option value="ViCulP">Team ViCulP</option>
+                <option value="Eklavya">Team Eklavya</option>
+                <option value="Abhivriddhi">Abhivriddhi Club</option>
+                <option value="Vit-Expression-Hub ">Vit Expression Hub </option>
+            </select>
+        </div>
+        <br><br>
+        <div>
+            <label for="branch">Branch * :</label> <br>
+            <input class="branch" type="radio" name="branch"  id="cs"       value="cs" > <label for="cs">CS - Computer Science</label>  <br>
+            <input class="branch"  type="radio" name="branch" id="cs-ai"    value="cs-ai" > <label for="cs-ai">CS - AI</label> <br>
+            <input class="branch"  type="radio" name="branch" id="cs-aiml"  value="cs-aiml" > <label for="cs-aiml">CS - AIML </label> <br>
+            <input class="branch"  type="radio" name="branch" id="cs-se"    value="cs-se" > <label for="cs-se">CS - Software Eng.</label> <br>
+            <input class="branch"  type="radio" name="branch" id="cs-ds"    value="cs-ds" > <label for="cs-ds">CS - DS</label> <br>
+            <input class="branch"  type="radio" name="branch" id="cs-cbi"    value="cs-cbi" > <label for="cs-cbi">CS - CBI</label> <br>
+            <input class="branch"  type="radio" name="branch" id="civil"     value="civil" > <label for="civil">Civil Eng.</label> <br>
+            <input class="branch"  type="radio" name="branch" id="mech"       value="mech. eng" > <label for="mech">Mech. Eng.</label> <br>
+            <input class="branch"  type="radio" name="branch" id="entc"     value="ENTC" > <label for="entc">ENTC</label> <br>
+            <input class="branch"  type="radio" name="branch" id="it"       value="IT" > <label for="it">IT</label> <br> <br><br>
+
+            <div>
+                <label for="div">Division * :</label> <br> <br>
+                <select name="div" id="div" required>
+                    <option disabled selected value>--Select--</option>
+                    <option value="A">A</option>
+                    <option value="B">B</option>
+                    <option value="C">C</option>
+                    <option value="D">D</option>
+                    <option value="E">E</option>
+                    <option value="F">F</option>
+                    <option value="G">G</option>
+                </select>
+            </div> <br><br>
+
+            <div>
+                <label for="domain">Select Domain * : </label> <br>
+                <input class="domain" type="checkbox" id="domain1" name="database" value="database">
+                <label for="domain1">Database Volunteer</label> <br>
+                <input class="domain" type="checkbox" id="domain2" name="database" value="photography">
+                <label for="domain2">Photography Volunteer</label> <br>
+                <input class="domain" type="checkbox" id="domain3" name="database" value="publicity">
+                <label for="domain3">Publicity Volunteer</label> <br>
+                <input class="domain" type="checkbox" id="domain4" name="database" value="Socialmedia">
+                <label for="domain4">Social Media</label> <br>
+                <input class="domain" type="checkbox" id="domain5" name="database" value="Tech">
+                <label for="domain5">Technical Volunteer</label> <br>
+                <input class="domain" type="checkbox" id="domain6" name="database" value="sponsorship">
+                <label for="domain6">Sponsership Volunteer</label> <br>
+                <input class="domain" type="checkbox" id="domain7" name="database" value="website">
+                <label for="domain7">Website Volunteer</label> 
+            <br>
+            </div> <br><br>
+<div>
+    <label for="about">What Do You Understand about this Club * :</label> <br> <br>
+    <textarea name="about" id="about" rows="5" cols="60" required></textarea> <br><br>
+
+    <label for="interests">What interests you the most about the domains you have <br>applied for? *:</label> <br> <br>
+    <textarea name="interests" id="interests" rows="5" cols="50" required></textarea> <br><br>
+
+    <label for="contribution">If recruited, how will you contribute to the functions of the domains <br> you have applied for? *:</label> <br> <br>
+    <textarea name="contribution" id="contribution" rows="5" cols="50" required></textarea> <br><br>
+
+    <label for="already-joined-clubs">Are you currently a part of OR interested in joining any other club <br> or committee in the institute? *:</label> <br> <br>
+    <textarea name="already-joined-clubs" id="already-joined-clubs" rows="5" cols="50" required></textarea> <br><br>
+
+
+</div>
+            
+        <input type="submit" value="Submit" id="submit">
+        <input type="reset" name="reset" id="reset" value="Clear Form">
+         </form>
+
+
+        </button>
+    </div>
+</section>
+</body>
+<footer>
+    <a href="https://www.vit.edu/" target="_blank"> Visit The Official VIT Pune WebPage</a> 
+     </footer>
+</html>
+
+
+
+
+
+
+
+<!-- <h3>Full Name * </h3>
+        <textarea name="name" id="name"></textarea>
+        <h3>PRN * </h3>
+        <textarea name="prn" id="prn"></textarea>
+        <h3>E-mail ID (vit.edu) * </h3>
+        <textarea name="mail" id="mail"></textarea>
+        <h3>Mobile Number (Whatsapp) * </h3>
+        <textarea name="mob-no" id="mob-no"></textarea>
+        <h3>Campus *</h3>
+        <input type="radio" id="radio" name="Campus" value="Bibwewadi"> <label for="Bibwewadi">Bibwewadi</label> <br>
+        <input type="radio" id="radio" name="Campus" value="Kondhwa"> <label for="Kondhwa">Kondhwa</label> -->
+
+
+        

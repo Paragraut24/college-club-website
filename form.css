@@ -1,0 +1,122 @@
+
+#vitlogo{
+    width: 180px;
+}
+header{
+    text-align: center;
+    background-color: #333333b3;
+    padding-bottom: 10px;
+    color: rgb(255, 255, 255);
+    width: 100%;
+    margin-left: -20px;
+}
+
+html{
+    scroll-behavior: smooth;
+    }
+body{
+    background-image: linear-gradient(rgb(240, 189, 252), rgb(97, 136, 242));
+}
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%; 
+    min-height: 100%;
+  }
+  
+header{
+    width: 100%;
+}
+
+h2{
+    text-align: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: rgb(255, 255, 255);
+}
+p{
+    font-family: "Parkinsans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    color: aliceblue;
+    text-align: center;
+}
+#intro{
+    background-color: #333333c1;
+    border-radius: 25px;
+    padding: 30px;
+    margin: 20px;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+#form{
+    background-color: #333333be;
+    border-radius: 25px;
+    padding: 40px;
+    margin: 20px;
+    font-family: "Exo 2", sans-serif;
+    font-optical-sizing: auto;
+    color: rgb(241, 230, 254);
+    margin-left: 10%;
+    margin-right: 10%;
+    font-size: larger;
+    transition: transform 0.2s;
+    margin-bottom: 80px;
+}
+#club,#div{
+    padding: 20px;
+    border-radius: 20px;
+    width: 80%;
+    transition: transform 0.2s;
+    
+}
+.domain,.branch,.campus{
+    transition: transform 0.2s;
+}
+.domain:hover,.branch:hover,.campus:hover{
+    transform: scale(1.3);
+}
+#name,#prn,#email,#mob{
+    width: 80%;
+    height: 30px;
+    border-radius: 15px;
+    padding: 5px;
+    margin: 10px;
+    transition: transform 0.2s;
+}
+#name:hover,#prn:hover,#email:hover,#mob:hover,#about:hover,#interests:hover,#contribution:hover,#already-joined-clubs:hover,#club:hover,#div:hover{
+    transform: scale(1.01);
+}
+#submit:hover,#reset:hover{
+    transform: scale(1.05);
+}
+
+
+#submit,#reset{
+    font-family: "Parkinsans", sans-serif;
+    background-color: antiquewhite;
+    border-radius: 15px;
+    padding: 10px;
+    transition: transform 0.2s;
+}
+#reset{
+    margin-left: 20px;
+    text-align: right;
+}
+#about,#interests,#contribution,#already-joined-clubs{
+    height: 80px;
+    border-radius: 18px;
+    padding: 5px;
+    width: 70%;
+    transition: transform 0.2s;
+}
+footer a{
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    font-family: Arial, sans-serif;
+}
